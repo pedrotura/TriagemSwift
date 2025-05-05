@@ -103,6 +103,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="sOy-M4-9Hl">
                                 <rect key="frame" x="265" y="168" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="mudarValorStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="bOO-bD-Tc5"/>
+                                </connections>
                             </stepper>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Spu-A2-7x5">
                                 <rect key="frame" x="253" y="265" width="118" height="30"/>
@@ -137,6 +140,9 @@
                                     <segment title="Urgente"/>
                                     <segment title="Emergência"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mudarIndice:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ihr-Oe-v4O"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFn-bL-aVT">
                                 <rect key="frame" x="12" y="419" width="243" height="35"/>
@@ -148,6 +154,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                     </view>
+                    <connections>
+                        <outlet property="labelIdade" destination="hiU-57-nqc" id="dpz-XJ-Ozr"/>
+                        <outlet property="labelLink" destination="W3N-ER-dxz" id="ls1-le-DCz"/>
+                        <outlet property="labelPAD" destination="SCi-PS-Nde" id="ZqH-P8-hTA"/>
+                        <outlet property="labelPAS" destination="QK6-48-toM" id="30z-DO-9lE"/>
+                        <outlet property="segRisco" destination="glE-YK-zte" id="Hog-Mh-PcU"/>
+                        <outlet property="stpIdade" destination="sOy-M4-9Hl" id="Mhe-sO-zMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
